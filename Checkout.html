@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/Checkout.css">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-white">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: white;">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Favourites.html">Favourites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="cart-summary">
+    Checkout (<span id="cart-item-count">0</span>)
+  </div>
+
+  <main class="main-container">
+    <div class="checkout-grid">
+      <div class="order-summary">
+        
+      </div>
+      <div class="payment-summary">
+        <div class="payment-summary-title">
+          Order Summary
+        </div>
+
+        <div class="payment-summary-row">
+          <div>Items (<span id="cart-item-counts">0</span>):</div>
+          <div class="payment-summary-money" id="items-total">$0.00</div>
+        </div>
+
+        <div class="payment-summary-row subtotal-row">
+          <div>Total before tax:</div>
+          <div class="payment-summary-money" id="subtotal">$0.00</div>
+        </div>
+
+        <div class="payment-summary-row">
+          <div>Estimated tax (10%):</div>
+          <div class="payment-summary-money" id="tax">$0.00</div>
+        </div>
+
+        <div class="payment-summary-row total-row">
+          <div>Order total:</div>
+          <div class="payment-summary-money" id="order-total">$0.00</div>
+        </div>
+
+        <button class="place-order-button button-primary">
+          Place your order
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script src="components/dynamicListener.min.js"></script>
+  <script type="module" src="scripts/Checkout.js"></script>
+  </body>
+</html>
