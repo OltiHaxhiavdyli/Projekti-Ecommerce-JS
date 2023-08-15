@@ -12,12 +12,12 @@ export function Product(product) {
             <p class="rating">Rating: ${product.rating.rate} (${product.rating.count} reviews)</p>
         </div>
         <div class="button-container">
-        <button class="add-to-favoruites-button js-add-to-favourites">
-          <i class="bi bi-heart-fill"></i>
-        </button>
-        <button id="copyButton">
-          <i class="bi bi-share-fill"></i>
-        </button>
+          <button class="add-to-favoruites-button js-add-to-favourites">
+            <i class="bi bi-heart-fill"></i>
+          </button>
+          <button id="copyButton">
+            <i class="bi bi-share-fill"></i>
+          </button>
       </div>
     </div>
   `;

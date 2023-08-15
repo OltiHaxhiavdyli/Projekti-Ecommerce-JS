@@ -166,3 +166,11 @@ select {
   border: none;
   background-color: yellow;
 }
+
+@media(max-width: 700px){
+  .favorite-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

@@ -118,3 +118,25 @@ header {
   font-size: 18px;
   margin-right: 5px;
 }
+
+@media (max-width: 700px) {
+  header {
+    margin-bottom: 20px;
+  }
+
+  .product {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    border: none;
+  }
+  
+  .add-to-favoruites-button,
+  #copyButton {
+    flex-basis: 100%;
+  }
+}
